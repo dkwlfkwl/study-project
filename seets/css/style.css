@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('reset.css');
+@import url('common.css');
+@import url('main.css');
+body{overflow:hidden; min-width:320px;}
+#wrap{font-family: 'Noto Sans KR';font-weight: 400; letter-spacing:-1px; font-size: 16px; color: #333;}
+
+/* font-family */
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/NotoSansKR-Thin.woff2') format('woff2'),
+	   url('../fonts/NotoSansKR-Thin.woff') format('woff'),
+	   url('../fonts/NotoSansKR-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
+	   url('../fonts/NotoSansKR-Light.woff') format('woff'),
+	   url('../fonts/NotoSansKR-Light.otf') format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Regular.woff') format('woff'),
+		url('../fonts/NotoSansKR-Regular.otf') format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+		url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Bold.woff') format('woff'),
+		url('../fonts/NotoSansKR-Bold.otf') format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 900;
+   src: url('../fonts/NotoSansKR-Black.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Black.woff') format('woff'),
+		url('../fonts/NotoSansKR-Black.otf') format('opentype');
+ }
+::selection{color:#fff;background-color:#f26522;}
+::-moz-selection{color:#fff;background-color:#f26522;}
+
+
+
+
+/* font-size */
+.txt100{font-size:100px;line-height:1.2;}
+.txt88{font-size:88px;line-height:1.2;}
+.txt66{font-size:66px;line-height:1.2;}
+.txt62{font-size:62px;line-height:1.428;}
+.txt56{font-size:56px;line-height:1.428;}
+.txt54{font-size:54px;line-height:1.428;}
+.txt50{font-size:50px;line-height:130%;}
+.txt48{font-size:48px;line-height:130%;}
+.txt45{font-size:45px;line-height:1.428;}
+.txt44{font-size:44px;line-height:1.428;}
+.txt40{font-size:40px;line-height:1.428;}
+.txt38{font-size:38px;line-height:130%;}
+.txt36{font-size:36px;line-height:1.428;}
+.txt34{font-size:34px;line-height:1.428;}
+.txt32{font-size:32px;line-height:1.428;}
+.txt30{font-size:30px;line-height:180%;}
+.txt28{font-size:28px;line-height:1.33;}
+.txt26{font-size:26px;line-height:1.33;}
+.txt24{font-size:24px;line-height:1.2;}
+.txt21{font-size:21px;line-height:1.33;}
+.txt20{font-size:20px;line-height:1.33;}
+.txt19{font-size:19px;line-height:1.33;}
+.txt18{font-size:18px;}
+.txt17{font-size:17px;line-height:1.33;}
+.txt16{font-size:16px;line-height:1.33;}
+.txt15{font-size:15px;line-height:1.33;}
+.txt14{font-size:14px;line-height:1.5;}
+.txt13{font-size:13px;line-height:1.5;}
+.txt12{font-size:12px;line-height:1.5;}
+.txt11{font-size:11px;line-height:1.5;}
+.txt10{font-size:10px;line-height:1.5;}
+.txt8{font-size:8px;line-height:1.33;}
+/* 공통 */
+.row {width: 100%; margin:0 auto; position: relative;}
+.tly-50{position:absolute;left:0;top:50%;width:100%;transform:translateY(-50%);-moz-transform:translateY(-50%);-webkit-transform:translateY(-50%);-o-transform:translateY(-50%);}
+.tlx-50{position:absolute;left:50%;top:0;transform:translateX(-50%);-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);-o-transform:translateX(-50%);}
+.tl-50{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);}
+
+article {position: relative;}
+.white {color: #fff;}
+.black {color: #000;}
+.gray {color: #777;}
+.blue {color: #38618f ;}
+.red {color: #ff6745 ;}
+.orange {color: #fd9735  ;}
+.all_block {display: block;}
+.no_768 {display: block;}
+.no_486 {display: block;}
+.fw100 {font-weight: 100;}
+.fw300 {font-weight: 300;}
+.fw400 {font-weight: 400;}
+.fw500 {font-weight: 500;}
+.fw700 {font-weight: 700;}
+.wk {-ms-word-break: keep-all;word-break: keep-all;}
+.tac {text-align: center;}
+.tal {text-align: left;}
+.tar {text-align: right;}
+
+.w1920 {max-width:1920px; margin:0 auto; position: relative;}
+.w1200 {max-width:1200px; margin:0 auto; position: relative;}
+
+
+
+
+@media all and (max-width:1920px){
+
+}
+@media all and (max-width:1200px){
+	.txt100,
+	.txt88,
+	.txt74{font-size:60px;}
+	.txt66,
+	.txt62,
+	.txt60{font-size:52px;}
+	.txt56,
+	.txt54{font-size:48px;}
+	.txt50{font-size:42px;}
+	.txt48{font-size:38px;}
+	.txt45,
+	.txt45,
+	.txt44{font-size:36px;}
+	.txt40{font-size:32px;}
+	.txt36,
+	.txt34{font-size:28px;}
+	.txt32{font-size:26px;}
+	.txt30{font-size:24px;}
+	.txt28,
+	.txt26{font-size:20px;}
+	.txt24,
+	.txt21{font-size:18px;}
+	.txt20,
+	.txt19{font-size:17px;}
+	.txt18,
+	.txt17{font-size:16px;}
+	.txt16{font-size:15px;}
+	.txt15{font-size:14px;}
+	.txt14{font-size:13px;}
+	.txt12{font-size:11px;}
+	.txt11{font-size:10px;}
+	
+	
+
+}
+
+@media all and (max-width:760px){
+	.dn_768 {display: none;}
+	.no_768 {display: inline;}
+	.block_768 {display: block;}
+	
+}
+
+@media all and (max-width:486px){
+	.txt100,
+	.txt88,
+	.txt74,
+	.txt66,
+	.txt62,
+	.txt60{font-size:33px;}
+	.txt56,
+	.txt54{font-size:32px;}
+	.txt50{font-size:28px;}
+	.txt48,
+	.txt45,
+	.txt44{font-size:26px;}
+	.txt40{font-size:24px;}
+	.txt38,
+	.txt36,
+	.txt34{font-size:20px;}
+	.txt32,
+	.txt30,
+	.txt28{font-size:18px;}
+	.txt26{font-size:17px;}
+	.txt24,
+	.txt21{font-size:16px;}
+	.txt20,
+	.txt19{font-size:15px;}
+	.txt18,
+	.txt17,
+	.txt16{font-size:14px;}
+	.txt15{font-size:13px;}
+	.txt14{font-size:12px;}
+	.txt12{font-size:10px;}
+	.dn_486 {display: none;}
+	.no_486 {display: inline;}
+	.block_486 {display: block;}
+	
+
+}
