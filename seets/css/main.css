@@ -1,58 +1,11 @@
 @charset "utf-8";
-@import url(reset.css);
-@import url(common.css);
-body{overflow:hidden; min-width:320px;}
-#wrap{font-family: 'Noto Sans KR'; font-weight: 400; letter-spacing:-1px; font-size: 16px; color: #333;}
+@import url('reset.css');
+@import url('common.css');
+@import url('seets/plugin/slick.css');
+@import url('seets/plugin/slick-thema.css');
+#wrap{font-weight: 400; letter-spacing:-1px; font-size: 16px; color: #333;}
 
-/* font-family */
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 100;
-  src: url('../fonts/NotoSansKR-Thin.woff2') format('woff2'),
-	   url('../fonts/NotoSansKR-Thin.woff') format('woff'),
-	   url('../fonts/NotoSansKR-Thin.otf') format('opentype');
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
-	   url('../fonts/NotoSansKR-Light.woff') format('woff'),
-	   url('../fonts/NotoSansKR-Light.otf') format('opentype');
-}
-@font-face {
-   font-family: 'Noto Sans KR';
-   font-style: normal;
-   font-weight: 400;
-   src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
-		url('../fonts/NotoSansKR-Regular.woff') format('woff'),
-		url('../fonts/NotoSansKR-Regular.otf') format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans KR';
-   font-style: normal;
-   font-weight: 500;
-   src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
-		url('../fonts/NotoSansKR-Medium.woff') format('woff'),
-		url('../fonts/NotoSansKR-Medium.otf') format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans KR';
-   font-style: normal;
-   font-weight: 700;
-   src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
-		url('../fonts/NotoSansKR-Bold.woff') format('woff'),
-		url('../fonts/NotoSansKR-Bold.otf') format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans KR';
-   font-style: normal;
-   font-weight: 900;
-   src: url('../fonts/NotoSansKR-Black.woff2') format('woff2'),
-		url('../fonts/NotoSansKR-Black.woff') format('woff'),
-		url('../fonts/NotoSansKR-Black.otf') format('opentype');
- }
+
 ::selection{color:#fff;background-color:#f26522;}
 ::-moz-selection{color:#fff;background-color:#f26522;}
 
@@ -213,16 +166,16 @@ article {position: relative;}
 .con3 .advertising_wrap .advertising_con.on {display: block;}
 .video_wrap {position: relative; width: 100%; height: 0; padding-bottom: 56.25%;}
 .video_wrap iframe {width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
-
+.event_slide_wrap {overflow: hidden;}
 
 /* 슬라이드설정 */
-.review_slide_wrap .slick-slide {opacity: .5;margin: 50px 12px 0; }
-.review_slide_wrap .slick-slide.slick-center {opacity: 1;}
-.review_slide_wrap .slick-prev, .slide_s24 .slick-next {top: auto; bottom: 60px; transform:translate(0, 0%); z-index: 1;}
-.review_slide_wrap .slick-prev {left: 50%; margin-left: -60px; width: 34px; height: 34px; background: url('../images/sub/s2_prev.png') 0 0 no-repeat;}
-.review_slide_wrap .slick-next {right: 50%; margin-right: -60px;width: 34px; height: 34px; background: url('../images/sub/s2_next.png') 0 0 no-repeat;}
-.slick-prev:hover, .slick-prev:focus{background: url('../images/sub/s2_prev_ov.png') 0 0 no-repeat !important;}
-.slick-next:hover, .slick-next:focus{background: url('../images/sub/s2_next_ov.png') 0 0 no-repeat !important;}
+.slick-slide {opacity: .5;margin: 50px 12px 0; }
+.slick-slide.slick-center {opacity: 1;}
+.slick-prev, .slide_s24 .slick-next {top: auto; bottom: 60px; transform:translate(0, 0%); z-index: 1;}
+.slick-prev {left: 50%; margin-left: -60px; width: 34px; height: 34px; background: url('../img/main/prev.png') 0 0 no-repeat;}
+.slick-next {right: 50%; margin-right: -60px;width: 34px; height: 34px; background: url('../img/main/next.png') 0 0 no-repeat;}
+.slick-prev:hover, .slick-prev:focus{background: url('../img/main/prev.png') 0 0 no-repeat !important;}
+.slick-next:hover, .slick-next:focus{background: url('../img/main/next_ov.png') 0 0 no-repeat !important;}
 .slick-prev:before {display: none;}
 .slick-next:before {display: none;}
 .slide-count-wrap {position: absolute; bottom: 67px; left: 50%; margin-left: -15px;}
@@ -231,6 +184,23 @@ article {position: relative;}
 .con5 {padding: 80px 0; }
 .con5 .left {float: left; width: 48%; height: 500px; }
 .con5 .right {float: right; width: 48%; height: 500px;}
+
+
+
+
+/* footer */
+#footer {background-color: #2f2f2f; text-align: center;}
+#footer ul li {display: inline-block;}
+#footer ul li a {display: block;  padding:22px 15px; font-size: 16px; color: #fff; position: relative; transition:0.5s;}
+#footer ul li a:hover,
+#footer ul li a:focus {text-decoration: underline;}
+#footer ul li a:after { content:''; display: block; width: 1px; height: 12px; background-color: #fff; position: absolute; top: 25px; left: 0;}
+#footer ul li:first-child a:after {display: none;}
+#footer .f_logo {text-align: center; padding: 30px 0 20px;}
+
+#footer .top_trigger{display:none;position:fixed;right:14%;bottom:50px;margin:0 /* -896px */0 0 0;z-index:9998;}
+
+
 
 @media all and (max-width:1920px){
 
@@ -292,6 +262,9 @@ article {position: relative;}
 	.con5 .left,
 	.con5 .right {float: none; width: 100%;}
 	.con5 .right {margin-top: 30px;}
+
+
+	#footer ul li a {font-size: 14px;}
 }
 
 @media all and (max-width:486px){
@@ -332,5 +305,9 @@ article {position: relative;}
 	.block_486 {display: block;}
 	
 	.m_tit {padding-left: 10px;}
+
+
+	#footer ul li a {padding: 22px 6px; font-size: 11px;}
+	#footer ul li a:after {top: 22px;}
 
 }
