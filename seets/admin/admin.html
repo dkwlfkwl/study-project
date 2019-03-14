@@ -7,16 +7,21 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<h1 class="hide">관리자페이지</h1>
-			<button type="btn-nav"></button>
+			<button type="button" class="btn-nav">
+				<i class="fa fa-bars"></i>
+			</button>
 			<div class="nav-wrap">
 				<div class="user">
-					<div class="content">
-						<img src="http://webapplayers.com/inspinia_admin-v2.9.1/md_skin/img/profile_small.jpg" alt="">
+					<div class="user-inner">
+						<p class="face">
+							<img src="images/profile-face.jpg" alt="">
+						</p>
 						<a class="profile" href="#">
 							<dl>
 								<dt class="name">유저이름</dt>
@@ -46,7 +51,10 @@
 				<nav class="nav">
 					<ul class="list">
 						<li>
-							<a href="#">대메뉴1</a>
+							<a href="#">
+								<i class="fa fa-th-large"></i>
+								대메뉴1
+							</a>
 							<ul class="sub-list">
 								<li><a href="#">소메뉴1</a></li>
 								<li><a href="#">소메뉴2</a></li>
@@ -229,20 +237,32 @@
 				</nav>
 			</div>
 			<ul class="util-menu">
-				<li>
-					<a href="#">Language</a>
+				<li class="util-menu-1">
+					<button type="button">Language</button>
 				</li>
-				<li>
-					<a href="#">email</a>
+				<li class="util-menu-2">
+					<button type="button">
+						<i class="fa fa-envelope fa-14"></i>
+						<span>email</span>
+					</button>
 				</li>
-				<li>
-					<a href="#">alarm</a>
+				<li class="util-menu-3">
+					<button type="button">
+						<i class="fa fa-bell"></i>
+						<span>alarm</span>
+					</button>
 				</li>
-				<li>
-					<a href="#">Log out</a>
+				<li class="util-menu-4">
+					<button type="button">
+						<i class="fa fa-sign-out"></i>
+						Log out
+					</button>
 				</li>
-				<li>
-					<a href="#">information message</a>
+				<li class="util-menu-5">
+					<button type="button">
+						<i class="fa fa-tasks"></i>
+						<span>information message</span>
+					</button>
 					<div class="tabmenu">
 						<a class="tittle" href="#">Notes</a>
 						<div class="content message">
