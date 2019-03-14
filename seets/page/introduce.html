@@ -1,4 +1,5 @@
 <!--<?php include_once("top.html");?>-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <title>연혁</title>
     <script src="../js/jquery-1.12.4.min.js"></script>
 	<script src="../js/jquery.fadethis.js"></script>
@@ -19,22 +20,13 @@
 		</div>
 	</div>
 	<div id="container">
-	   <h1><span>Service Challenger</span></h1>
+	   <h1 ><span class="flipInX">Service Challenger</span></h1>
 	   <div class="date_y"><span>2018</span></div>
 	   <div class="content">
 		   <div class="sec slide-top">
 			   <div class="date_m"><span>01 ~ 04 月</span></div>
 			   <div class="sec_content">
 				   <ul class="list_wrap">
-					   <li class="list">
-						   <div class="subject">"무술년 기를 받아랏" 이색 시무식</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">한국경제 주최 2018 고객감동경영대상 수상</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">사회공헌. 부산지사 연탄배달 자원봉사</div>
-					   </li>
 					   <li class="list">
 						   <div class="subject">JR 큐슈열차 체험단 블로그 원정대 이벤트</div>
 					   </li>
@@ -72,7 +64,7 @@
 				   <div class="tvl_img"><img src="../images/img/old.jpg" alt="img1"></div>
 			   </div>
 		   </div>
-		   <div class="sec slide-top">
+		   <div class="sec slide-left">
 			   <div class="date_m"><span>05 ~ 08 月</span></div>
 			   <div class="sec_content">
 				   <ul class="list_wrap">
@@ -97,28 +89,8 @@
 					   <li class="list">
 						   <div class="subject">8년 연속 대만 관광청 공로상 수상</div>
 					   </li>
-					   <li class="list">
-						   <div class="subject">여행박사 99데이 이벤트</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">카카오TV 라이브 홈쇼핑</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">간사이 철도 여행 블로그 체험단 모집</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">사회공헌. 2018 여행박사 복지기관 해외여행 공모전</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">200명 선착순, 해외 패키지 고객 와이파이 도시락 1일 무료 증정</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">여행 가기 좋은 징검다리 5, 6월 휴가 모음전</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">여행박사 99데이 이벤트</div>
-					   </li>
 				   </ul>
+				   <div class="tvl_img"><img src="../images/img/panorama.jpg" alt="img2"></div>
 			   </div>
 		   </div>
 		   <div class="sec slide-top">
@@ -157,17 +129,9 @@
 					   </li>
 					   <li class="list">
 						   <div class="subject">사회공헌. 2018 여행박사 복지기관 해외여행 공모전</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">200명 선착순, 해외 패키지 고객 와이파이 도시락 1일 무료 증정</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">여행 가기 좋은 징검다리 5, 6월 휴가 모음전</div>
-					   </li>
-					   <li class="list">
-						   <div class="subject">여행박사 99데이 이벤트</div>
-					   </li>
+                       </li>
 				   </ul>
+				   <div class="tvl_img"><img src="../images/img/vw-camper.jpg" alt="img3"></div>
 			   </div>
 		   </div>
 		   <script>
@@ -205,7 +169,16 @@
                e.preventDefault();
                $("#header").eq(0).trigger("click");
             });
+            //map
+            function myMap() {
+              var mapCanvas = document.getElementById("map");
+              var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+              };
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
         });
+        
     </script>
 </body>
 </html>
