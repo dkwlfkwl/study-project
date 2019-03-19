@@ -10,16 +10,18 @@
 
 body {
 	color: #676A84;
+	font-size: 13px;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+	background-color: #f3f3f4;
 }
 
 .header {
 	width: 100%;
-	line-height: 60px;
-	position: fixed;
-	top: 0;
-	left: 0;
+	position: relative;
 	background-color: #1ab394;
-	color: #fff;
 }
 .header:after {
 	content: "";
@@ -62,16 +64,23 @@ body {
 	font-size: 14px;
 }
 
-.nav-wrap {
+.aside {
 	width: 220px;
 	height: 100%;
-	overflow-y: hidden;
+	overflow-x: hidden;
 	position: fixed;
 	top: 60px;
 	left: 0;
 }
+.aside-wrap {
+	width: 237px;
+	height: 100%;
+	
+	overflow-y: auto;
+}
 
-.nav-wrap .user {
+
+.aside .user {
 	box-sizing: border-box;
 	width: 220px;
 	height: 155px;
@@ -79,17 +88,110 @@ body {
 	background-image: url("../images/profile-bg.png");
 	background-size: cover;
 	color: #676a6c;
+	position: relative;
 }
-.nav-wrap .user .face {
+.aside .user .face {
 	width: 48px;
 	height: 48px;
 	border-radius: 24px;
 	overflow: hidden;
 }
+
+.aside .user .profile {
+}
+.aside .user .profile .name {
+	color: #dfe4ed;
+}
+.aside .user .profile .job {
+	color: #fff;
+}
+
+.aside .user .menu {
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 70%;
+	background-color: #feffff;
+	border-radius: 5px;
+	z-index: 10;
+}
+
+.aside .user .menu a {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	line-height: 30px;
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+.aside .user .menu li:last-child a {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #e5e5e5;
+}
+
 .btn-nav {
 	float: left;
-
 }
+
+.nav .list>li {
+	height: 46px;
+	overflow: hidden;
+}
+
+.nav .list>li>a {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	line-height: 46px;
+	padding-left: 25px;
+	position: relative;
+	color: #5b5d5f;
+}
+
+.nav .list>li.on {
+	height: 100%;
+	border-left: 4px solid #19aa8d;
+}
+
+.nav .list>li.on>a {
+	font-weight: bold;
+	background-color: #f8f8f9;
+}
+
+.nav .list a:hover {
+	font-weight: bold;
+}
+
+.nav .list>li>a:after {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	width: 5px;
+	height: 5px;
+	border-right: 1px solid #79626D;
+	border-bottom: 1px solid #79626D;
+	transform: rotate(45deg);
+	margin-top: -3px;
+}
+
+.nav .list>li>a>i {
+	padding-right: 5px;
+}
+
+.nav .sub-list a {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	line-height: 32px;
+	padding-left: 50px;
+	background-color: #f8f8f9;
+}
+
 .util-menu {
 	float: right;
 }
